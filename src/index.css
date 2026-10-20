@@ -1,0 +1,109 @@
+@import "tailwindcss";
+
+@theme {
+  --color-surface: #f8f9ff;
+  --color-surface-dim: #cbdbf5;
+  --color-surface-bright: #f8f9ff;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #eff4ff;
+  --color-surface-container: #e5eeff;
+  --color-surface-container-high: #dce9ff;
+  --color-surface-container-highest: #d3e4fe;
+  --color-on-surface: #0b1c30;
+  --color-on-surface-variant: #5c403c;
+  --color-inverse-surface: #213145;
+  --color-inverse-on-surface: #eaf1ff;
+  --color-outline: #916f6b;
+  --color-outline-variant: #e6bdb8;
+  --color-surface-tint: #bf0715;
+  --color-primary: #b70011;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #dc2626;
+  --color-on-primary-container: #fff6f5;
+  --color-inverse-primary: #ffb4ab;
+  --color-secondary: #565e74;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #dae2fd;
+  --color-on-secondary-container: #5c647a;
+  --color-tertiary: #006645;
+  --color-on-tertiary: #ffffff;
+  --color-tertiary-container: #008259;
+  --color-on-tertiary-container: #e1ffec;
+  --color-error: #ba1a1a;
+  --color-on-error: #ffffff;
+  --color-error-container: #ffdad6;
+  --color-on-error-container: #93000a;
+  --color-primary-fixed: #ffdad6;
+  --color-primary-fixed-dim: #ffb4ab;
+  --color-on-primary-fixed: #410002;
+  --color-on-primary-fixed-variant: #93000b;
+  --color-secondary-fixed: #dae2fd;
+  --color-secondary-fixed-dim: #bec6e0;
+  --color-on-secondary-fixed: #131b2e;
+  --color-on-secondary-fixed-variant: #3f465c;
+  --color-tertiary-fixed: #6ffbbe;
+  --color-tertiary-fixed-dim: #4edea3;
+  --color-on-tertiary-fixed: #002113;
+  --color-on-tertiary-fixed-variant: #005236;
+  --color-background: #f8f9ff;
+  --color-on-background: #0b1c30;
+  --color-surface-variant: #d3e4fe;
+
+  --spacing-gutter: 1.5rem;
+  --spacing-gutter-mobile: 1rem;
+  --spacing-margin: 2rem;
+  --spacing-margin-mobile: 1rem;
+  --spacing-space-xs: 0.25rem;
+  --spacing-space-sm: 0.5rem;
+  --spacing-space-md: 1rem;
+  --spacing-space-lg: 1.5rem;
+  --spacing-space-xl: 2.5rem;
+
+  --font-sans: 'Inter', sans-serif;
+}
+
+@layer base {
+  body {
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+/* Custom text and font classes to match design system tokens */
+.font-headline-xl { font-size: clamp(32px, 4vw, 48px); line-height: 1.15; letter-spacing: -0.03em; font-weight: 800; }
+.text-headline-xl { font-size: clamp(32px, 4vw, 48px); line-height: 1.15; letter-spacing: -0.03em; font-weight: 800; }
+
+.font-headline-lg { font-size: clamp(26px, 3vw, 36px); line-height: 1.22; letter-spacing: -0.025em; font-weight: 700; }
+.text-headline-lg { font-size: clamp(26px, 3vw, 36px); line-height: 1.22; letter-spacing: -0.025em; font-weight: 700; }
+
+.font-headline-md { font-size: 24px; line-height: 32px; letter-spacing: -0.02em; font-weight: 700; }
+.text-headline-md { font-size: 24px; line-height: 32px; letter-spacing: -0.02em; font-weight: 700; }
+
+.font-headline-sm { font-size: 20px; line-height: 28px; letter-spacing: -0.015em; font-weight: 600; }
+.text-headline-sm { font-size: 20px; line-height: 28px; letter-spacing: -0.015em; font-weight: 600; }
+
+.font-body-lg { font-size: 18px; line-height: 28px; letter-spacing: -0.01em; }
+.text-body-lg { font-size: 18px; line-height: 28px; letter-spacing: -0.01em; }
+
+.font-body-md { font-size: 15px; line-height: 24px; letter-spacing: -0.005em; }
+.text-body-md { font-size: 15px; line-height: 24px; letter-spacing: -0.005em; }
+
+.font-body-sm { font-size: 13px; line-height: 20px; }
+.text-body-sm { font-size: 13px; line-height: 20px; }
+
+.font-label-md { font-size: 14px; line-height: 20px; letter-spacing: 0.01em; font-weight: 600; }
+.text-label-md { font-size: 14px; line-height: 20px; letter-spacing: 0.01em; font-weight: 600; }
+
+.font-label-sm { font-size: 11px; line-height: 16px; letter-spacing: 0.04em; font-weight: 700; }
+.text-label-sm { font-size: 11px; line-height: 16px; letter-spacing: 0.04em; font-weight: 700; }
+
+.font-metric-display { font-size: clamp(32px, 3.5vw, 40px); line-height: 44px; letter-spacing: -0.03em; font-weight: 800; }
+.text-metric-display { font-size: clamp(32px, 3.5vw, 40px); line-height: 44px; letter-spacing: -0.03em; font-weight: 800; }
+
+/* Custom scrollbar hide */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
